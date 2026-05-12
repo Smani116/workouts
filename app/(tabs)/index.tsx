@@ -42,8 +42,8 @@ export default function WorkoutScreen() {
   }, [today, selectedDay]);
 
   const completedCount =
-    currentProgress?.exercises.filter((e) => e.completed).length ?? 0;
-  const totalExercises = dayData.exercises.length;
+    currentProgress?.exercises?.filter((e) => e.completed)?.length ?? 0;
+  const totalExercises = dayData?.exercises?.length ?? 0;
 
   return (
     <SafeAreaView style={styles.safe}>

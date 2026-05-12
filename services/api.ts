@@ -1,10 +1,12 @@
 import axios from "axios";
 import { Platform } from "react-native";
 
-// For web, we use relative URLs (same-origin proxy or direct)
-// For native, we need the full URL
-const BASE_URL =
-  Platform.OS === "web" ? "/api" : "http://localhost:5000/api";
+// In development, both web and native need the full backend URL.
+// In production (Vercel), we'll use relative /api routes.
+const DEV_URL = "http://localhost:5000/api";
+const PROD_URL = "/api";
+
+const BASE_URL = __DEV__ ? DEV_URL : PROD_URL;
 
 const api = axios.create({
   baseURL: BASE_URL,
