@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="A weekly modern workout plan with daily targets.">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Weekly Workouts</h1>
+            <p class="subtitle">Crush your fitness goals, day by day.</p>
+        </header>
+
+        <div class="glass-panel main-panel">
+            <div class="dropdown-wrapper">
+                <label for="day-select" class="dropdown-label">Select Your Day</label>
+                <div class="select-container">
+                    <select id="day-select">
+                        <option value="day1">Day 1 – Full Body Fat Burn</option>
+                        <option value="day2">Day 2 – Cardio + Core</option>
+                        <option value="day3">Day 3 – Lower Body</option>
+                        <option value="day4">Day 4 – Upper Body</option>
+                        <option value="day5">Day 5 – HIIT Fat Burn</option>
+                        <option value="day6">Day 6 – Walking + Stretching</option>
+                        <option value="day7">Day 7 – Rest</option>
+                    </select>
+                    <div class="select-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div id="workout-content" class="workout-content fade-in">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+
+        <div class="glass-panel daily-targets">
+            <h2>🔥 Daily Targets</h2>
+            <ul class="target-list">
+                <li>
+                    <span class="icon">💧</span>
+                    <span class="text">Water: 3–4 liters</span>
+                </li>
+                <li>
+                    <span class="icon">👟</span>
+                    <span class="text">Steps: 8,000–12,000</span>
+                </li>
+                <li>
+                    <span class="icon">🥩</span>
+                    <span class="text">Protein every meal</span>
+                </li>
+            </ul>
+            <div class="hashtags">
+                #trending #reels #gymmotivation #gym #diet
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
